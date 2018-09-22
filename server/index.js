@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 
 //EndPoints
-app.get('/stats', serviceWorker.getStats);
+app.post('/stats', serviceWorker.getStats);
 
 //Define the port the server listens on
 app.listen(3008, function(){
